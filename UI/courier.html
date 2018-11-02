@@ -13,36 +13,15 @@
         <div class="logo">SendIT</div>
             <nav>
                 <ul>
+                    
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html" >Services</a></li>
-                    <li><a href="#" onclick="redirector1()">DashBoard</a></li>
-                    <li><a href="#" >Contact me</a></li>
                     <li><a href="login.html" >Courier Services</a></li>
+                    <li><a href="#" >Log Out</a></li>
                 </ul>        
             </nav>
          </header>
-         <div class="wrapper">
-                <div class="container">
-                    <div class="signup">Place Order</div>
-                  
-                    <div class="signup-form">
-                        <p>From :</p><input type="text" placeholder="Choose city" class="input"><br />
-                        <p>To :</p><input type="text" placeholder="Choose city" class="input"><br />
-                        <text>Item type</text>
-                        <select class="item">
-                                <option value="volvo">Parcel</option>
-                                <option value="saab">Envelope</option>
-
-                        </select>
-                        <br><br>
-                        <input type="text" placeholder="Weight" class="input"><br />
-                        
-                        <div class="btn"><a href="#">Create Shipment</a></div>
-                        </div>
-                 
-                  
-                </div>
-          </div>
+         <div class="dash">User DashBoard</div>
 
           <div class="c_table">
               <table>
@@ -55,23 +34,37 @@
                       <th>To</th>
                       <th>Status</th>
                       <th>Ref No</th>
+                      <th>Price</th>
+                      <th>Options</th>
+                      <th>Payment Status</th>
                   </tr>
                   <tr>
                         <td>Letter</td>
                         <td>Envelope</td>
                         <td>Nairobi</td>
-                        <td>Nakuru</td>
+                        <td>Nairobi</td>
                         <td>Delivered</td>
                         <td>457788657</td>
+                        <th>$40</th>
+                        <td>Already Delivered</td>
+                        <td>Paid</td>
                         
                     </tr>
                     <tr>
                             <td>watches</td>
                             <td>Parcel</td>
                             <td>Kisumu</td>
-                            <td>Nairobi</td>
+                            <td><select>
+                                    <option value="">Nairobi</option>
+                                    <option value="Yes">Kisumu</option>
+                                    <option value="No">Eldoret</option>
+                                </select></td>
                             <td>Intransit</td>
                             <td>867493948</td>
+                            <th>$60</th>
+                            <td class="lin"><a href>Cancel</a></td>
+                            <td>Paid</td>
+                            
                             
                      </tr>
 
@@ -79,9 +72,32 @@
                             <td>laptop</td>
                             <td>Parcel</td>
                             <td>Naivash</td>
-                            <td>Mombasa</td>
+                            <td><select>
+                                    <option value="">Nairobi</option>
+                                    <option value="Yes">Kisumu</option>
+                                    <option value="No">Eldoret</option>
+                                </select></td>
                             <td>Intransit</td>
-                            <td>867493948</td>      
+                            <td>867493948</td>
+                            <th>$80</th>
+                            <td class="lin"><a href>Cancel</a></td> 
+                            <td>Paid</td>     
+                     </tr>
+
+                     <tr>
+                            <td>books</td>
+                            <td>Parcel</td>
+                            <td>Githu</td>
+                            <td><select>
+                                    <option value="">Nairobi</option>
+                                    <option value="Yes">Kisumu</option>
+                                    <option value="No">Eldoret</option>
+                                </select></td>
+                            <td>Not Dispatched</td>
+                            <td>352353948</td>
+                            <th>$90</th>
+                            <td class="lin"><a href>Cancel</a></td>   
+                            <td>Not Paid</td>   
                      </tr>
 
               </table>
@@ -101,15 +117,7 @@
             function redirector2(){
                 window.location="courier.html"
             }
-
-            var validation = function(){
-                var username = document.getElementById('username').value;
-                var password = document.getElementById('password').value;
-
-                if(username == '' && password == ''){
-                    document.getElementById('notice').innerHTML='you need to fill all fields'
-                }
-            } 
+ 
 
         
     </script>
